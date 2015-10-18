@@ -14,7 +14,7 @@ def fetchFileInfo():
     }
 
 def main():
-    global files
+
     if len(sys.argv) != 2:
         print
         ("usage: ext_info.py path\n"
@@ -32,5 +32,6 @@ def main():
     for name, info in sorted(files.items()):
         print ( "%s %d %d"%(name, info["count"],info["fileSize"]) )
         print
+
 if __name__ == "__main__":
     main()
